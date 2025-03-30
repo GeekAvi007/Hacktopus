@@ -1,17 +1,35 @@
-"use client"
+"use client";
 import HeroSection from "@/components/Herosection";
 import Navbar from "@/components/Navbar";
-import { Team } from "@/components/Team";
 import { Theme } from "@/components/Theme";
-// import { Timeline } from "@/components/Timeline";
-export default function Home(){
+import FAQSection from "@/components/FAQ";
+import { TimelineSection } from "@/components/Timeline";
+
+export default function Home() {
   return (
-    <main className="min-h screen bg-black/[0.95] antialiased bg-grid-white/[0.2]">
+    <main className="min-h-screen bg-black/[0.95] antialiased bg-grid-white/[0.2]">
       <Navbar />
-      <HeroSection />
-      <Theme />
-      <Team />
+      
+      {/* Hero Section */}
+      <section id="hero">
+        <HeroSection />
+      </section>
+
+
+      <section id="timeline">
+        <TimelineSection />
+      </section>
+
+
+      {/* Theme Section */}
+      <section id="theme">
+        <Theme />
+      </section>
+
+      {/* FAQ Section */}
+      <section id="faq">
+        <FAQSection />
+      </section>
     </main>
-    
-  )
+  );
 }

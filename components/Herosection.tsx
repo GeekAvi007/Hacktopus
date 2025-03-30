@@ -2,22 +2,7 @@
 import Link from "next/link";
 import React from "react";
 import { BackgroundBeams } from "./ui/background-beams";
-import { Timeline } from "./ui/timeline";
 
-const timelineData = [
-  {
-    title: "Started the Journey",
-    content: <p className="text-neutral-700 dark:text-neutral-300">Began exploring the world of health-tech innovation.</p>,
-  },
-  {
-    title: "Built the First Prototype",
-    content: <p className="text-neutral-700 dark:text-neutral-300">Developed an MVP integrating IoT sensors for health tracking.</p>,
-  },
-  {
-    title: "Launched Beta Version",
-    content: <p className="text-neutral-700 dark:text-neutral-300">Released the initial version for user testing and feedback.</p>,
-  },
-];
 
 function HeroSection() {
   return (
@@ -32,7 +17,7 @@ function HeroSection() {
             <img
               src="logo.png" // Change to your image path
               alt="Your Logo"
-              className="sm:w-90 md:w-90 h-auto mx-auto mt-10 m-2.5" // Adjust width as needed
+              className="sm:w-150 md:w-150 h-auto mx-auto mt-10 m-2.5" // Adjust width as needed
             />
           </div>
 
@@ -50,12 +35,6 @@ function HeroSection() {
             </Link>
           </div>
         </div>
-      </div>
-
-      {/* Timeline Section */}
-      <div className="m-2.5">
-        <BackgroundBeams className="absolute inset-0 z-0" />
-        <Timeline data={timelineData} />
       </div>
       
     </div>

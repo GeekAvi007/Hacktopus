@@ -10,39 +10,39 @@ export function Theme() {
 }
 export const projects = [
   {
-    title: "Stripe",
-    description:
-      "A technology company that builds economic infrastructure for the internet.",
-    link: "https://stripe.com",
+    "title": "AI/ML",
+    "description": "Advancing artificial intelligence and machine learning to solve real-world problems efficiently."
   },
   {
-    title: "Netflix",
-    description:
-      "A streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.",
-    link: "https://netflix.com",
+    "title": "Web3",
+    "description": "Building decentralized applications that redefine trust, security, and ownership on the internet."
   },
   {
-    title: "Google",
-    description:
-      "A multinational technology company that specializes in Internet-related services and products.",
-    link: "https://google.com",
+    "title": "FinTech",
+    "description": "Innovating financial technology to create seamless, secure, and inclusive digital transactions."
   },
   {
-    title: "Meta",
-    description:
-      "A technology company that focuses on building products that advance Facebook's mission of bringing the world closer together.",
-    link: "https://meta.com",
+    "title": "Healthcare Tech",
+    "description": "Leveraging technology to enhance healthcare accessibility, diagnosis, and patient care."
   },
   {
-    title: "Amazon",
-    description:
-      "A multinational technology company focusing on e-commerce, cloud computing, digital streaming, and artificial intelligence.",
-    link: "https://amazon.com",
+    "title": "Sustainability",
+    "description": "Developing eco-friendly tech solutions for a greener, more sustainable future."
   },
   {
-    title: "Microsoft",
-    description:
-      "A multinational technology company that develops, manufactures, licenses, supports, and sells computer software, consumer electronics, personal computers, and related services.",
-    link: "https://microsoft.com",
+    "title": "Smart Cities",
+    "description": "Enhancing urban life through IoT, automation, and intelligent infrastructure."
   },
-];
+  {
+    "title": "EdTech",
+    "description": "Transforming education through digital platforms, AI tutors, and interactive learning tools."
+  },
+  {
+    "title": "Blockchain",
+    "description": "Revolutionizing industries with decentralized, transparent, and immutable blockchain technology."
+  },
+  {
+    "title": "AgriTech",
+    "description": "Empowering farmers with smart agriculture solutions, automation, and precision farming."
+  }
+]
