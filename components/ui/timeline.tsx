@@ -42,7 +42,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           transition={{ duration: 0.5 }}
           className="text-lg md:text-4xl mb-4 max-w-4xl bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-300"
         >
-          Timeline of Hacktopus 2k25
+          {/* Timeline of Hacktopus 2k25 */}
         </motion.h2>
         <motion.p 
           initial={{ opacity: 0, y: 20 }}
@@ -50,7 +50,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-neutral-400 text-sm md:text-base max-w-sm"
         >
-          The journey of Hacktopus 2k25 from announcement to conclusion
+          {/* The journey of Hacktopus 2k25 from announcement to conclusion */}
         </motion.p>
       </div>
 
