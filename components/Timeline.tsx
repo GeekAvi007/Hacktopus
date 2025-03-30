@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { BackgroundBeams } from "./ui/background-beams";
 import { Timeline as TimelineComponent } from "./ui/timeline";
 
@@ -55,30 +55,11 @@ const timelineData = [
 ];
 
 export function TimelineSection() {
-  const [displayText, setDisplayText] = useState("");
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const text = "Timeline: ";
-
-  useEffect(() => {
-    if (currentIndex < text.length) {
-      const timeout = setTimeout(() => {
-        setDisplayText(prev => prev + text[currentIndex]);
-        setCurrentIndex(prev => prev + 1);
-      }, 150); // Adjust typing speed here
-
-      return () => clearTimeout(timeout);
-    }
-  }, [currentIndex, text]);
-
   return (
     <div className="w-full relative overflow-hidden p-4">
       <div className="m-2.5">
         <BackgroundBeams className="absolute inset-0 z-0" />
         <div className="relative z-10">
-          <h2 className="text-4xl md:text-6xl font-bold text-center mb-10 text-white">
-            {displayText}
-            <span className="ml-1 inline-block h-8 w-1 bg-white animate-blink"></span>
-          </h2>
           <TimelineComponent data={timelineData} />
         </div>
       </div>
