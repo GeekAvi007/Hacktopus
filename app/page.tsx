@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import { Theme } from "@/components/Theme";
 import FAQSection from "@/components/FAQ";
 import { TimelineSection } from "@/components/Timeline";
+import { Venue } from "@/components/Venue";
 
 export default function Home() {
   return (
@@ -18,6 +19,10 @@ export default function Home() {
 
       <section id="timeline">
         <TimelineSection />
+      </section>
+
+      <section id="venue">
+        <Venue />
       </section>
 
 
