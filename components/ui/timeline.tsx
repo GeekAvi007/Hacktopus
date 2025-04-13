@@ -34,14 +34,17 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   return (
     
-    <div className="w-full bg-black text-white font-sans md:px-10" ref={containerRef}>
-      <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <motion.h2 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="text-lg md:text-4xl mb-4 max-w-4xl bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-300"
-        >
+<div className="w-full bg-black text-white font-sans md:px-4" ref={containerRef}>
+  <div className="max-w-7xl mx-auto py-2 px-2 md:px-4 lg:px-2">
+    <motion.h2 
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="text-lg md:text-3xl mb-2 max-w-4xl bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-300"
+    >
+      {/* Your Heading Text */}
+
+
           {/* Timeline of Hacktopus 2k25 */}
         </motion.h2>
         <motion.p 
