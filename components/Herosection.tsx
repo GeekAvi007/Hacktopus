@@ -53,33 +53,38 @@ function HeroSection() {
           </div>
 
           {/* Countdown */}
-          <motion.h3
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-xl md:text-2xl font-semibold text-neutral-300 mb-4"
-          >
-            Countdown to Hacktopus 2k25
-          </motion.h3>
+{/* Countdown */}
+<motion.h3
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5 }}
+  className="text-xl md:text-2xl font-semibold text-neutral-300 mb-4 relative"
+>
+  Countdown to Hacktopus 2k25
+</motion.h3>
 
-          <div className="flex justify-center gap-3 sm:gap-5 flex-wrap mb-8">
-            {["days", "hours", "minutes", "seconds"].map((unit, i) => (
-              <motion.div
-                key={unit}
-                initial={{ scale: 0.8 }}
-                animate={{ scale: 1 }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="bg-[#1d1c20] border border-white/[0.08] rounded-lg p-3 sm:p-4 text-center min-w-[70px]"
-              >
-                <div className="text-2xl sm:text-3xl font-bold text-white">
-                  {timeLeft[unit as keyof typeof timeLeft]}
-                </div>
-                <div className="text-xs sm:text-sm text-neutral-400 mt-1">
-                  {unit.toUpperCase()}
-                </div>
-              </motion.div>
-            ))}
-          </div>
+{/* Centered and shrinkable countdown timer */}
+<div className="w-full flex justify-center mb-8">
+  <div className="flex flex-nowrap gap-2 sm:gap-4 justify-center items-center w-full max-w-md md:max-w-2xl">
+    {["days", "hours", "minutes", "seconds"].map((unit, i) => (
+      <motion.div
+        key={unit}
+        initial={{ scale: 0.8 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 0.5, delay: i * 0.1 }}
+        className="flex-1 min-w-0 bg-[#1d1c20] border border-white/[0.08] rounded-lg px-2 py-3 sm:px-3 text-center"
+      >
+        <div className="text-lg sm:text-2xl font-bold text-white">
+          {timeLeft[unit as keyof typeof timeLeft]}
+        </div>
+        <div className="text-xs sm:text-sm text-neutral-400 mt-1">
+          {unit.toUpperCase()}
+        </div>
+      </motion.div>
+    ))}
+  </div>
+</div>
+
 
           {/* Description */}
           <p className="font-normal text-base md:text-lg text-neutral-300 max-w-xl mx-auto mb-4">
