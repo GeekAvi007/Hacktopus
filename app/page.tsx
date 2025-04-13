@@ -5,7 +5,7 @@ import { Theme } from "@/components/Theme";
 import FAQSection from "@/components/FAQ";
 import { TimelineSection } from "@/components/Timeline";
 import { Venue } from "@/components/Venue";
-
+import { Judges } from "@/components/Judges";
 export default function Home() {
   return (
     <main className="min-h-screen bg-black/[0.95] antialiased bg-grid-white/[0.2]">
@@ -29,6 +29,11 @@ export default function Home() {
       {/* Theme Section */}
       <section id="theme">
         <Theme />
+      </section>
+
+
+      <section id="judges">
+        <Judges />
       </section>
 
       {/* FAQ Section */}
